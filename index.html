@@ -67,7 +67,7 @@
 			width: 600px;
 			padding: 50px;
 			box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
-			background: #fff;`
+			background: #fff;
 			visibility: hidden;
 			opacity: 0;
 			transition: 0.5s;
@@ -78,9 +78,37 @@
 			visibility: visible;
 			opacity: 1;
 			transition: 0.5s;
-
+		}
+		@media only screen and (max-width: 600px) {
+			.container .content{
+			position: relative;
+			max-width: 500px;
+			align-items: center;
+			}
+			h1{
+			font-size: 50px;
+			font-style: bold;
+			margin-bottom: 10px;
+			color: #333;
+			font-style: italic;
+			text-align: center;
+		}
+		#popup{
+			position: fixed;
+			top: 40%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 400px;
+			padding: 50px;
+			box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+			background: #fff;
+			visibility: hidden;
+			opacity: 0;
+			transition: 0.5s;
 
 		}
+}
+		
 
 	</style>
 </head>
